@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src='js/jquery-2.0.3.min.js'></script>
+        <script src='js/password.strength.js'></script>
+        <script>
+            $(document).ready(function(){
+                $("#myelement").PasswordStrength();
+            });
+        </script>
+        <style>
+            .PasswordStrengthWidget {
+                border:1px solid yellow;
+                background-color:#ffffcc;
+            }
+            .level1 {background-color:#ff0000;color:white;}
+            .level2 {background-color:#ff9900;color:white;}
+            .level3 {background-color:#ffff00;color:white;}
+            .level4 {background-color:#99ff00;color:white;}
+            .level5 {background-color:#00ff00;color:white;}
+        </style>
+    </head>
+    <body>
+        <div>A jQuery Plugin to allow you to show how long it would take a hacker to brute force your password hack.</div>
+        <div id='demo'>
+            <input type='password' id='myelement'>
+        </div>
+    </body>
+</html>
