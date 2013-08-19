@@ -57,9 +57,9 @@
                 }
                 //work out how powerfull a computer will be this year.
                 var MooresLaw = Math.round((CurrentDate.getFullYear() - 1970) / 1.5);
-                var Coeffiecent = 1.0000000313133803;
+                var Coeffiecent = 0.04;
                 for (var index = 0; index < MooresLaw; index++) {
-                    Coeffiecent *= Coeffiecent;
+                    Coeffiecent *= 2;
                 }
                 Coeffiecent = Math.round(Coeffiecent);
 
